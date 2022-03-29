@@ -1,0 +1,64 @@
+
+
+
+#formContainer {
+  display: flex;
+  justify-content: space-around;
+}
+
+#formContainer div{
+  width: 450px;
+  padding-bottom: 2em;
+  border: 1px solid black;
+}
+
+.center-text {
+  text-align: center;
+}
+
+#output {
+  border: 3px solid pink;
+}
+
+.namesign {
+  display: flex;
+  justify-content: space-around;
+  height: 250px;
+  
+}
+
+.namesign div {
+  width: 400px;
+}
+
+.center {
+  background-position: center;
+  align-items: center;
+  text-align: center;
+}
+.relative  {
+  position: relative;
+  
+}
+
+.sign-one {
+  background-image: url('/images/horse.jpg');
+}
+
+.sign-two {
+  background-image: url('/images/lama.jpg');
+}
+
+.sign-three {
+  background-image: url('/images/cat.jpg');
+}
+
+ .overlay {
+  position: absolute;
+  font-weight: bold;
+  font-size: 30px;
+  height: 1em;
+
+} 
+
+

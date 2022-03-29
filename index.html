@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="css\style.css" rel="stylesheet" type="text/css" />
+    
+
+    <title>Sign Shop</title>
+  </head>
+  <body>
+    <h1 class="center-text">Welcome to the sign shop</h1>
+
+    <section id="formContainer" class="center">
+      <div>
+        <h2>Insert sign text:</h2>
+    <form for="prizeBtn" action="click" id="formPrize">
+      <input type="text" id="inputText" />
+      
+      <button id="prizeBtn">Show cost</button>
+      <h3>Prize:</h3>
+      <textarea id="output" rows="2" cols="40" name="prize:"></textarea>
+
+    </div>
+    <div class="center">
+      <form action="radioGold">
+        <h2>Choose a color:</h2>
+        <label for="radioRegular">Regular</label>
+          <input type="radio" id="radioRegular" name="chooseColor"/>
+        <label for="radioGold">Golden</label>
+        <input type="radio" id="radioGold" name="chooseColor"/>
+        <label for="radioOrange">Orange</label>
+        <input type="radio" id="radioOrange" name="chooseColor"/>
+        <label for="radioBlue">Blue</label>
+        <input type="radio" id="radioBlue" name="chooseColor"/>
+        <label for="radioWhite">White</label>
+        <input type="radio" id="radioWhite" name="chooseColor"/>
+      </form>
+    </div>
+
+    <div class="center">
+      <form action="radioFont">
+        <h2>Choose a font:</h2>
+        <label for="radioFontRegular">Regular</label>
+        <input type="radio" id="radioFontRegular" name="chooseFont"/>
+        <label for="radioFontCursive">Cursive</label>
+          <input type="radio" id="radioFontCursive" name="chooseFont"/>
+          <label for="radioFontFantasy">Fantasy</label>
+          <input type="radio" id="radioFontFantasy" name="chooseFont"/>
+          <label for="radioFontPapyrus">Papyrus</label>
+          <input type="radio" id="radioFontPapyrus" name="chooseFont"/>
+      </form>
+    </div>
+</section>
+
+<h2 class="center">Move text in the first sign - work in progress</h2>
+<section class="namesign">
+
+    <div class="sign-one sign relative center bg-container">
+        <div class="overlay one"></div>
+    </div>
+
+      <div class="sign-two sign relative center">
+        <div class="overlay two"></div>
+        </div>
+
+        <div class="sign-three sign relative center">
+          <div class="overlay"></div>
+          </div>
+    </form>
+  </div>
+  </section>
+
+
+ 
+
+    <script src="script/script.js" type="text/javascript"></script>
+  </body>
+</html>
