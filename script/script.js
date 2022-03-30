@@ -130,12 +130,9 @@ function font(font) {
   }
 }
 
+/* MUST BE AN CLEANER WAY THAN TO ADD EVERYTHING TO THREE(!!) PICTURES!!  */
 
-/* .sign .signChild */
-
-
-
-
+/* FIRST PICTURE */
 let elem = document.querySelector('.sign-one'), 
 div = document.querySelector('.one'), 
          x = 0, 
@@ -162,5 +159,63 @@ div = document.querySelector('.one'),
          div.style.top = e.clientY + y + 'px'; 
      } 
  }, true);  
- 
 
+ 
+/* SECOND PICTURE */
+let elemTwo = document.querySelector('.sign-two'), 
+divTwo = document.querySelector('.two'), 
+         a = 0, 
+         b = 0, 
+         mousedownTwo = false; 
+  
+ divTwo.addEventListener('mousedown', function (e) { 
+     mousedownTwo = true; 
+     // subtract offset 
+     a = divTwo.offsetLeft - e.clientX; 
+     b = divTwo.offsetTop - e.clientY; 
+ }, true); 
+  
+ divTwo.addEventListener('mouseup', function (e) { 
+     mousedownTwo = false; 
+ }, true); 
+  
+ // element mousemove to stop 
+ elemTwo.addEventListener('mousemove', function (e) { 
+     // Is mouse pressed 
+     if (mousedownTwo) { 
+         // Now we calculate the difference upwards 
+         divTwo.style.left = e.clientX + a + 'px'; //Horizontal
+         divTwo.style.top = e.clientY + b + 'px';  // Vertical
+         
+     } 
+ }, true);  
+
+ 
+/* THIRD PICTURE */
+let elemThree = document.querySelector('.sign-three'), 
+divThree = document.querySelector('.three'), 
+         c = 0, 
+         d = 0, 
+         mousedownThree = false; 
+  
+ divThree.addEventListener('mousedown', function (e) { 
+     mousedownThree = true; 
+     // subtract offset 
+     c = divThree.offsetLeft - e.clientX; 
+     d = divThree.offsetTop - e.clientY; 
+ }, true); 
+  
+ divThree.addEventListener('mouseup', function (e) { 
+     mousedownThree = false; 
+ }, true); 
+  
+ // element mousemove to stop 
+ elemThree.addEventListener('mousemove', function (e) { 
+     // Is mouse pressed 
+     if (mousedownThree) { 
+         // Now we calculate the difference upwards 
+         divThree.style.left = e.clientX + c + 'px'; //Horizontal
+         divThree.style.top = e.clientY + d + 'px';  // Vertical
+         
+     } 
+ }, true);  
