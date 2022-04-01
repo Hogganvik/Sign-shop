@@ -42,15 +42,15 @@
 }
 
 .sign-one {
-  background-image: url('/images/horse.jpg');
+  background-image: url('../images/horse.jpg');
 }
 
 .sign-two {
-  background-image: url('/images/lama.jpg');
+  background-image: url('../images/lama.jpg');
 }
 
 .sign-three {
-  background-image: url('/images/cat.jpg');
+  background-image: url('../images/cat.jpg');
 }
 
  .overlay {
